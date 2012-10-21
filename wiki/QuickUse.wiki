@@ -37,8 +37,12 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 			@SuppressWarnings("unchecked")
 			List<File> files = (List<File>)data.getSerializableExtra(FilePickerActivity.EXTRA_FILE_PATH);			
                         //Print the File/Folder  names		
-			for(File file:files)
-			System.out.prinln(file.getAbsolutePath());					
+			for(File file:files){
+                          if(file.isDirectory())
+			   System.out.prinln("Directory : "+file.getAbsolutePath());
+			 else
+			   System.out.prinln("Directory : "+file.getAbsolutePath());
+                          }					
 			}
 		}
 	}
