@@ -35,7 +35,8 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if(data.hasExtra(FilePickerActivity.EXTRA_FILE_PATH)) {
 			// Get the file path
 			@SuppressWarnings("unchecked")
-			List<File> files = (List<File>)data.getSerializableExtra(FilePickerActivity.EXTRA_FILE_PATH);			//Print the File/Folder  names		
+			List<File> files = (List<File>)data.getSerializableExtra(FilePickerActivity.EXTRA_FILE_PATH);			
+                        //Print the File/Folder  names		
 			for(File file:files)
 			System.out.prinln(file.getAbsolutePath());					
 			}
