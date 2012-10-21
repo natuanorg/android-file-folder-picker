@@ -2,7 +2,7 @@
 #labels Phase-Implementation
 
 = Integrating =
-[http://code.google.com/p/android-file-folder-picker/source/checkout Checkout] this project to your machine and import this project into the same _eclipse_ *workspace* as that of your _Android Application project_.
+[http://code.google.com/p/android-file-folder-picker/source/checkout Checkout] or [http://code.google.com/p/android-file-folder-picker/downloads/detail?name=FilePickerLibrary.zip&can=2&q= download] this project to your machine and import this project into the same _eclipse_ *workspace* as that of your _Android Application project_.
 Now right click on your Application Project, click *Properties* > *Android*  and add the FilePicker Project as a *Library* to your application Project
 
 Now add the following activity tag to your Application Project Manifest's application tag.
